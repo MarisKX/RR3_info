@@ -4,6 +4,8 @@ services:
   django:
     build:
       context: .
+      args:
+        - DEV=true
     volumes:
       - ./django_backend:/django_backend
     ports:
